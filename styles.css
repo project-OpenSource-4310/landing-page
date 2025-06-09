@@ -494,3 +494,89 @@ body, div, header, nav, ul, p, img{
     0%   { transform: translateY(-100%); }
     100% { transform: translateY(0); }
 }
+
+/* PRICES SECTION */
+
+.prices{
+    color: #DD22EB;
+    font-family: Montserrat;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.prices_header{
+    justify-self: center;
+}
+
+.ph_title{
+    font-size: 50px;
+    margin: 20px 0px 50px 0px;
+    
+}
+
+.plans{
+    display: flex;
+    justify-self: center;
+}
+
+.plan{
+    background-color: #d4d4d4;
+    margin: 50px 30px;
+    border-radius: 30px;
+    padding: 25px;
+    padding-bottom: 25px;
+    max-height: 450px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.resaltar{
+    margin-top: 0;
+    color: #fff;
+    background-color: #540065;
+}
+
+.plan_title{
+    
+    margin: 0;
+}
+
+.cost{
+    
+    margin: 0;
+}
+
+.benefits_conteiner{
+    max-width: 290px;
+    padding: 0;
+}
+
+.benefit{
+    list-style:none;
+}
+
+.acceder_buttom{
+    font-weight: 700;/*BOLD*/
+    color: #DD22EB;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 12px 110px;
+    
+    text-decoration: none;
+    outline: 2px solid #DD22EB;
+    transition: background-color 0.3s, border-radius 0.24s, outline 0.3s;
+}
+.acceder_buttom:hover{
+    background-color: #7D0097;
+    border-radius: 5px;
+    outline: 2px solid #DD22EB;
+}
+
+.pro{
+    margin-bottom: 150px;
+}
+.pre{
+    margin-bottom: 195px;
+}
+.gra{
+    margin-bottom: 170px;
+}
