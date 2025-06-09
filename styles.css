@@ -368,3 +368,129 @@ body, div, header, nav, ul, p, img{
     font-size: 1rem;
     line-height: 1.6;
 }
+/* TESTIMONIES SECTION*/
+
+/* PARTE IZQUIERDA*/
+.testimonies{
+    display: flex;
+}
+
+.intro__container{
+    flex: 1 1 40%;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 203px 40px 203px 80px;
+}
+
+
+.intro__title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.intro__description{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* PARTE DERECHA */
+.testimonies__container{
+    display: flex;
+    flex: 1 1 60%;
+    align-items: center;
+    justify-content: center;
+    background-color: #080210;
+}
+
+.carousel{
+    width: calc(50% - 5px); /* Ajuste exacto para dejar 10px en el medio */
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 50px;
+}
+.testimonial{
+    color: #fff;
+    margin: 70px 0;
+}
+.t_info{
+    background-color: #7D0097;
+    height: 300px;
+    padding: 20px;
+}
+.Comillas{
+    width: 80px;
+    height: 60px;
+}
+.dice{
+    font-family: 'Montserrat', sans-serif;
+}
+.t_user{
+    background-color: #540065;
+    height: 90px;
+    display: flex;
+}
+.Avatar{
+    margin: 12px 0px 0px 20px;
+    width: 60px;
+    height: 60px;
+}
+.user_info{
+    margin-left:20px ;
+}
+.user_name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 20px 0 2px 0;
+}
+.user_rol{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+.t_top{
+    border-radius: 40px 40px 0 0 ;
+}
+.t_bottom{
+    border-radius: 0 0 40px 40px ;
+}
+.car_icon{
+    width: 200px;
+    margin: 0 75px;
+}
+.track{
+    position: absolute;
+    animation: scroll-down 50s linear infinite;
+}
+.track.reverse{
+    animation: scroll-up 50s linear infinite;
+}
+.divider-container{
+    width: 25px; /* ← espacio reservado entre los carruseles */
+    display: flex;
+    height: 100%;
+    
+}
+.line{
+    width: 7px;
+    height: 100%;
+    background-color: #ffffff;
+}
+.spacer{
+    width: 7px;
+}
+
+@keyframes scroll-up {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+@keyframes scroll-down {
+    0%   { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
