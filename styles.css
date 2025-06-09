@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #080210;
+}
+body, div, header, nav, ul, p, img{
+    box-sizing: border-box;
+}
+/* NAVBAR SECTION*/
+
+.nav {
+    background-color: #080210;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.nav__logo-container {
+    flex: 1;
+    text-align: left;
+}
+
+.nav__ul-container {
+    flex: 2;
+    text-align: center;
+}
+
+.nav__ul {
+    display: inline-flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, outline 0.3s;
+}
+
+.nav__link:hover {
+    background-color: #7D0097;
+    outline: 2px solid #DD22EB;
+}
+
+.link__ContactUs {
+    background-color: #DD22EB;
+    padding: 12px 30px;
+    font-weight: 700;
+}
+
+.nav__cta-container {
+    flex: 1;
+    text-align: right;
+}
+
+.logoName{
+    margin-top: 5px;
+    width: 200px;
+}
+
+/* HOME SECTION */
+
+.home{
+    padding: 20px 0 65px 0;
+    font-family: montserrat;
+    display: flex;
+    color: #fff;
+    z-index: 10;
+    
+}
+
+.home__item{
+    padding: 30px;
+    flex-grow:1 ;
+    text-align: center;
+}
+
+.llaveInglesa{
+    width: 220px;
+}
+
+.home__titule{
+    font-size: 72px;
+    font-weight: 700;/*BOLD*/
+    line-height: 75px;
+}
+
+.home__description{
+    font-weight: 500;/*MEDIUM*/
+    font-size: 20px;
+}
+
+.CallToAction{
+    font-size: 20px;
+    font-weight: 700;/*BOLD*/
+    color: #fff;
+    text-decoration: none;
+    background-color: #DD22EB;
+    border-radius: 5px;
+    padding: 15px 50px;
+    transition: background-color 0.3s, border-radius 0.24s, outline 0.3s;
+    outline: 0;
+}
+
+.CallToAction:hover{
+    background-color: #7D0097;
+    border-radius: 5px;
+    outline: 2px solid #DD22EB;
+}
