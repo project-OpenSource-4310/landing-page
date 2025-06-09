@@ -580,3 +580,39 @@ body, div, header, nav, ul, p, img{
 .gra{
     margin-bottom: 170px;
 }
+
+/* FOOTER SECTION */
+.footer{
+    color: #fff;
+    justify-self: center;
+    
+    margin: 70px 0 ;
+}
+.footerlogo_container{
+    justify-self: center;
+    padding: 0 50px;
+    
+}
+.footerlogo{
+    width: 200px;
+    
+}
+.redes{
+    justify-self: center;
+    display: flex;
+    border-bottom: 1px solid #fff ;
+    padding: 20px;
+}
+.red{
+    font-family: Montserrat;
+    
+    margin: 0 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.copy{
+    margin-top: 30px;
+    justify-self: center;
+    font-family: Montserrat;
+    
+}
