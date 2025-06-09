@@ -44,5 +44,111 @@
             <img class="llaveInglesa" src="./Image/LlaveInglesa_right.png" alt="">
         </aside>
     </div>
+     <div id="services" class="services__1">
+        <div class="services__1-item"><img class="corchete"src="/Image/Corchete_left.png" alt=""></div>
+        <div class="services__1-item tablet">
+            <div class="tablet-outer-border">
+            <div class="mockup-tablet">
+                <div class="tablet-header">
+                    <div class="tablet-dropdown">Flota 1 ✎</div>
+                    <div class="tablet-user">
+                        <span>Usuario</span>
+                        <span class="user-icon">👤</span>
+                    </div>
+                </div>
+                <div class="tablet-cards">
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">Toyota Corolla</span>
+                        <img class="Vehiculo" src="./Image/Car_1.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">BMW m3</span>
+                        <img class="Vehiculo" src="./Image/Car_2.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">Yamaha yzf-r1</span>
+                        <img class="Vehiculo" src="./Image/Moto.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">Jeep cherokee</span>
+                        <img class="Vehiculo" src="./Image/Car_3.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                </div>
+                <div class="tablet-footer">Todo es más fácil</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services__1-item"><img class="corchete corcheteb" src="./Image/Corchete_left.png" alt=""></div>
+    </div>
+    <div class="services__2">
+        <div class="image-container" id="imageContainer">
+            <img src="./Image/guia.png" alt="Placeholder" id="floatingImage">
+        </div>
+        <script>
+            const image = document.getElementById('floatingImage');
+            const container = document.getElementById('imageContainer');
+    
+            window.addEventListener('scroll', () => {
+                const containerRect = container.getBoundingClientRect();
+                const minTop = 150;
+                const maxTop = container.clientHeight - image.clientHeight - 150;
+    
+                let newTop = window.innerHeight / 2 - containerRect.top - (image.clientHeight / 2);
+    
+                newTop = Math.max(minTop, Math.min(newTop, maxTop));
+    
+                image.style.top = `${newTop}px`;
+            });
+        </script>
+        <div class="services__2-info">
+            <div class="info__item">
+                <h2 class="item__title">Guía Interactiva de Reparación</h2>
+                <p class="item__description">Checklist personalizable con pasos específicos para el tipo de reparación. Los técnicos pueden marcar tareas, asegurando un proceso más organizado, estandarizado y sin errores.</p>
+            </div>
+            <div class="info__item">
+                <h2 class="item__title">Historial Técnico Centralizado</h2>
+                <p class="item__description">Consulta el historial completo de intervenciones de cada vehículo en segundos. Visualiza fallas recurrentes, repuestos utilizados y costos asociados, todo en un solo lugar.</p>
+            </div>
+            <div class="info__item">
+                <h2 class="item__title">Presupuestos Automáticos</h2>
+                <p class="item__description">Calcula automáticamente el costo estimado de cada mantenimiento incluyendo mano de obra y repuestos. Toma decisiones informadas sin sorpresas.</p>
+            </div>
+        </div>
+        <script>
+            
+            const infoItems = document.querySelectorAll(".info__item");
+        
+            const images = [
+                "./Image/guia.png",         // Imagen para el primer item
+                "./Image/historial.png", // Imagen para el segundo item
+                "./Image/presupuesto.png"   // Imagen para el tercer item
+            ];
+        
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && entry.intersectionRatio === 1) {
+                        const index = Array.from(infoItems).indexOf(entry.target);
+                        if (index !== -1) {
+                            image.src = images[index];
+                            // Reinicia la animación
+                    image.classList.remove("fade-in");
+                    void image.offsetWidth; // Fuerza el reflow
+                    image.classList.add("fade-in");
+                        }
+                    }
+                });
+            }, {
+                root: null, // viewport
+                threshold: 1.0 // 100% del elemento visible
+            });
+        
+            infoItems.forEach(item => observer.observe(item));
+        </script>
+    </div>
 </body>
 </html>
