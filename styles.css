@@ -580,22 +580,68 @@ body, div, header, nav, ul, p, img{
 .gra{
     margin-bottom: 170px;
 }
+/* CONTACTO SECTION */
+.contacto{
+    flex: 1 1 40%;
+    color: #fff;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4vw; 
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+}
+/* PARTE IZQUIERDA */
+.formContacto{
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+input{
+    width: 25vw;
+    height: 3vh;
+    text-align: center; /* ALINEAR EN EJE x*/
+    align-content: center; /* ALINEAR EN EJE Z*/
+    font-family: 'Montserrat', sans-serif;
+}
+textarea{
+    width: 25vw;
+    text-align: center; /* ALINEAR EN EJE x*/
+    align-content: center; /* ALINEAR EN EJE Z*/
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/* PARTE DERECHA */
+.contactlogo_container{
+    justify-self: center;
+    float: left;
+    align-items: center;
+    align-content: center;
+    
+}
+.contactlogo{
+    width: 20vw;
+}
 
 /* FOOTER SECTION */
 .footer{
     color: #fff;
     justify-self: center;
-    
-    margin: 70px 0 ;
-}
-.footerlogo_container{
-    justify-self: center;
-    padding: 0 50px;
-    
-}
-.footerlogo{
-    width: 200px;
-    
+    margin: 5vh 0 ;
 }
 .redes{
     justify-self: center;
@@ -605,7 +651,6 @@ body, div, header, nav, ul, p, img{
 }
 .red{
     font-family: Montserrat;
-    
     margin: 0 50px;
     text-decoration: none;
     color: #fff;
