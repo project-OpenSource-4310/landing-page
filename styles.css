@@ -2,6 +2,7 @@ body{
     margin: 0;
     font-family: sans-serif;
     background-color: #080210;
+    font-size: clamp(10px, 1vw, 15px);
 }
 body, div, header, nav, ul, p, img{
     box-sizing: border-box;
@@ -13,10 +14,11 @@ body, div, header, nav, ul, p, img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 1.5rem 5%;
     position: sticky;
     top: 0;
     z-index: 20;
+    font-weight: 700;
 }
 
 .nav__logo-container {
@@ -31,13 +33,12 @@ body, div, header, nav, ul, p, img{
 
 .nav__ul {
     display: inline-flex;
-    gap: 30px;
+    gap: 3vw;
     padding: 0;
     margin: 0;
     list-style: none;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }
 
 .nav__item {
@@ -47,7 +48,7 @@ body, div, header, nav, ul, p, img{
 .nav__link {
     color: #fff;
     text-decoration: none;
-    padding: 10px 12px;
+    padding: 1vw 2vw;
     border-radius: 5px;
     transition: background-color 0.3s, outline 0.3s;
 }
@@ -59,7 +60,7 @@ body, div, header, nav, ul, p, img{
 
 .link__ContactUs {
     background-color: #DD22EB;
-    padding: 12px 30px;
+    padding: 2vh 3vh;
     font-weight: 700;
 }
 
@@ -69,50 +70,57 @@ body, div, header, nav, ul, p, img{
 }
 
 .logoName{
-    margin-top: 5px;
-    width: 200px;
+    margin-top: 1vh;
+    width: 13vw;
 }
 
 /* HOME SECTION */
 
 .home{
-    padding: 20px 0 65px 0;
     font-family: montserrat;
     display: flex;
     color: #fff;
-    z-index: 10;
-    
+    justify-content: center;
 }
 
 .home__item{
-    padding: 30px;
     flex-grow:1 ;
     text-align: center;
+    max-width: 100%;
+    height: 60vh;
+    object-fit:scale-down;
+    position: relative;
 }
 
 .llaveInglesa{
-    width: 220px;
+    max-width: 100%;
+    height: 75vh;
+    object-fit:scale-down;
+    position: relative;
 }
 
 .home__titule{
-    font-size: 72px;
-    font-weight: 700;/*BOLD*/
-    line-height: 75px;
+  font-size: clamp(2rem, 5vw, 4.5rem); /* Tamaño adaptable entre 2rem y 4.5rem */
+  line-height: 1.2;
+  margin-top: 0;
 }
 
 .home__description{
-    font-weight: 500;/*MEDIUM*/
-    font-size: 20px;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
 }
-
+.CallToActionContainer{
+    text-align: center;
+    padding: 6vh;
+}
 .CallToAction{
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 700;/*BOLD*/
     color: #fff;
     text-decoration: none;
     background-color: #DD22EB;
     border-radius: 5px;
-    padding: 15px 50px;
+    padding: 2vh 5vh;
     transition: background-color 0.3s, border-radius 0.24s, outline 0.3s;
     outline: 0;
 }
@@ -126,43 +134,49 @@ body, div, header, nav, ul, p, img{
 /* SERVICES 1 SECTION*/
 
 .services__1{
-    padding: 50px 0 120px 0;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Permite que los items se ajusten */
+    gap: 2rem;
+    justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .services__1-item{
-    flex-grow:1 ;
+    flex-grow:1 1;
     text-align:center;
+    align-items: center;
+    min-width: 0; /* Permite que se reduzcan más allá del contenido */
 }
-
+/*
 .corchete{
-    width: 160px;
-
+    max-width: 100%;
+    height: 75vh;
+    object-fit:scale-down;
+    position: relative;
 }
 .corcheteb{
     transform: rotate(-180deg);
+    max-width: 100%;
+    height: 75vh;
+    object-fit:scale-down;
+    position: relative;
 }
+*/
 /* --- Tablet container --- */
 .mockup-tablet {
-    width: 800px;
-    height: 500px;
     background-color: #e4e4e4;
     border:25px solid #000000;
     border-radius: 40px;
-    padding: 20px;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     position: relative;
     box-sizing: border-box;
+    width: min(800px, 90vw); /* No superará 800px ni el 90% del viewport */
 }
 
 .tablet-outer-border {
     position: relative;
-    padding: 2.5px;
+    padding: 2vh;
     background-color: #828282; /* Color del borde externo */
     border-radius: 52px; /* Levemente más que el interior para que sobresalga */
     display: inline-block;
@@ -170,15 +184,15 @@ body, div, header, nav, ul, p, img{
 
   /* Tablet interna */
 .mockup-tablet {
-    width: 800px;
-    height: 500px;
     background-color: #e4e4e4;
     border-radius: 50px;
-    padding: 30px;
+    padding: 3vh;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
+    width: min(800px, 90vw);
+    margin: 0 auto;
 }
 
   /* HEADER de tablet */
@@ -210,8 +224,8 @@ body, div, header, nav, ul, p, img{
 .user-icon {
     background-color: #fff;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 3vw;
+    height: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,24 +268,23 @@ body, div, header, nav, ul, p, img{
 }
 
 .tablet-card-button {
-    margin-top: 4px;
+    margin: 1vh;
     padding: 5px 10px;
     background-color: #7D00B0;
     color: #fff;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 1vw;
     font-weight: 800;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
   /* FOOTER de tablet */
 .tablet-footer {
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 800;
     color: #7D00B0;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-    margin: 65px;
-    ;
+    margin: 4vw;
 }
 
 @keyframes appear{
@@ -299,6 +312,8 @@ body, div, header, nav, ul, p, img{
 
 .services__2 {
     display: flex;
+    flex-wrap: wrap; /* Permite que los items se ajusten */
+    justify-content: center;
 }
 
 /* PARTE IZQUIERDA */
@@ -312,8 +327,8 @@ body, div, header, nav, ul, p, img{
 .image-container img {
     margin-left: 145px;
     position: absolute;
-    top: 20px;
-    left: 73px;
+    top: 2vw;
+    left: 7vw;
     width: 100%;
     max-width: 400px;
     box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.2);
@@ -350,7 +365,7 @@ body, div, header, nav, ul, p, img{
 
 .info__item {
     max-width: 75%;
-    padding: 70px 0;
+    padding: 3vh 0;
     word-wrap: break-word;
 }
 
@@ -365,7 +380,7 @@ body, div, header, nav, ul, p, img{
 .item__description {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     line-height: 1.6;
 }
 /* TESTIMONIES SECTION*/
@@ -373,6 +388,8 @@ body, div, header, nav, ul, p, img{
 /* PARTE IZQUIERDA*/
 .testimonies{
     display: flex;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .intro__container{
@@ -517,16 +534,20 @@ body, div, header, nav, ul, p, img{
 .plans{
     display: flex;
     justify-self: center;
+    flex-wrap: wrap; /* Permite que los items se ajusten */
+    gap: 2rem;
 }
 
 .plan{
     background-color: #d4d4d4;
-    margin: 50px 30px;
+    margin: 1rem;
     border-radius: 30px;
     padding: 25px;
     padding-bottom: 25px;
     max-height: 450px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    flex: 1 1 300px; /* Crecen, se encogen, base de 300px */
+    min-width: 0; /* Permite que se reduzcan más allá del contenido */
 }
 
 .resaltar{
@@ -585,7 +606,7 @@ body, div, header, nav, ul, p, img{
     flex: 1 1 40%;
     color: #fff;
     margin-top: 0;
-    padding: 0;
+    padding: 3vh;
     box-sizing: border-box;
     position: relative;
     justify-self: center;
@@ -594,7 +615,7 @@ body, div, header, nav, ul, p, img{
     grid-gap: 4vw; 
     h1{
         font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
+        font-weight: 4vw;
         font-size: 3rem;
         line-height: 1.2;
         margin-bottom: 0;
@@ -604,7 +625,7 @@ body, div, header, nav, ul, p, img{
 .formContacto{
     float: left;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    width: min(400px, 90%);
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: center;
@@ -642,6 +663,7 @@ textarea{
     color: #fff;
     justify-self: center;
     margin: 5vh 0 ;
+    text-align: center;
 }
 .redes{
     justify-self: center;
