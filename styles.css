@@ -625,7 +625,6 @@ body, div, header, nav, ul, p, img{
 .formContacto{
     float: left;
     font-family: 'Montserrat', sans-serif;
-    width: min(400px, 90%);
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: center;
@@ -658,7 +657,95 @@ textarea{
     width: 20vw;
 }
 
-/* FOOTER SECTION */
+
+/* NOSOTROS SECTION */
+.nosotros{
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+.titleNosotros{
+    background-color: #540065;
+    border-radius: 5px;
+}
+.nosotrosDes{
+    margin: 0;
+    padding: 0;
+    width: 180%;
+    background-color: #7D0097;
+    padding: 2vw;
+    align-items: center;
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 4vw;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 0;
+    };
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+    li{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.6;
+        text-align: center; 
+    }
+}
+.pilares{
+    display: flex;
+    gap: 2vw;
+}
+.pilarA{
+    background-color:#540065;
+    border-radius: 30px;
+    padding: 1vw;
+
+}
+.pilarB{
+   background-color:#540065;
+    border-radius: 30px;
+    padding: 1vw;
+}
+.pilarC{
+    background-color:#540065;
+    border-radius: 30px;
+    padding: 1vw;
+}
+.misionVision{
+    display: flex;
+    text-align: center;
+}
+.titleProposito{
+    background-color: #540065;
+    border-radius: 5px;
+}
+.entrevistas{
+    background-color:#540065;
+    margin: 0;
+}
+.entrevistaA{
+    margin-left: 8vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    
+}
+.entrevistaB{
+    margin-right: 10vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+.entrevistaC{
+    margin-left: 8vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+.entrevistaD{
+    margin-right: 10vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+/* FOOTER */
 .footer{
     color: #fff;
     justify-self: center;
