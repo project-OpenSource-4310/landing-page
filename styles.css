@@ -135,16 +135,17 @@ body, div, header, nav, ul, p, img{
     outline: 2px solid #DD22EB;
 }
 
-/* SERVICES 1 SECTION*/
+/* CTA */
 
-.services__1{
+.CTA{
     flex-wrap: wrap; /* Permite que los items se ajusten */
     gap: 2rem;
+    padding: 6vh;
     justify-content: center;
     align-items: center;
 }
 
-.services__1-item{
+.CTA-item{
     flex-grow:1 1;
     text-align:center;
     align-items: center;
