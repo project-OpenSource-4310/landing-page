@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./Image/AutoNexo_Logolowlow.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>AutoNexo</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__logo-container">
+            <img class="logoName" src="./Image/AutoNexo_LogoName.png" alt="AutoNexo Logo">
+        </div>
+        <div class="nav__ul-container">
+            <ul class="nav__ul">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Servicios</a></li>
+                <li class="nav__item"><a href="#testimonies" class="nav__link">Testimonios</a></li>
+                <li class="nav__item"><a href="#prices" class="nav__link">Precios</a></li>
+                <li class="nav__item"><a href="#nosotros" class="nav__link">Nosotros</a></li>
+            </ul>
+        </div>
+        <div class="nav__cta-container">
+            <a href="#contact" class="nav__link link__ContactUs">Contáctanos</a>
+        </div>
+    </nav>
+    
+    <div id="home" class="home">
+        <aside class="home__item">
+            <img class="llaveInglesa" src="./Image/LlaveInglesa_left.png" alt="">
+        </aside>
+        <div class="home__item">
+            <h1 class="home__titule">Lleva el control total de las reparaciones de tu flota en una sola plataforma</h1>
+            <p class="home__description1">¿Cansado de perder tiempo y dinero con sistemas anticuados de mantenimiento vehicular?</p>
+            <p class="home__description2">AutoNexo es la solución todo-en-uno que automatiza, optimiza y simplifica el control de reparaciones de tu flota.</p>
+            <br>
+            <br>
+        </div>
+        <aside class="home__item">
+            <img class="llaveInglesa" src="./Image/LlaveInglesa_right.png" alt="">
+        </aside>
+    </div>
+    <div class="CTA">
+        <!--
+        <div class="services__1-item"><img class="corchete"src="/Image/Corchete_left.png" alt=""></div>
+         -->
+        <div class="CTA-item tablet">
+            <div class="tablet-outer-border">
+            <div class="mockup-tablet">
+                <div class="tablet-header">
+                    <div class="tablet-dropdown">Flota 1 ✎</div>
+                    <div class="tablet-user">
+                        <span>Usuario</span>
+                        <span class="user-icon">👤</span>
+                    </div>
+                </div>
+                <div class="tablet-cards">
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">Toyota Corolla</span>
+                        <img class="Vehiculo" src="./Image/Car_1.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">BMW m3</span>
+                        <img class="Vehiculo" src="./Image/Car_2.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">Yamaha yzf-r1</span>
+                        <img class="Vehiculo" src="./Image/Moto.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                    <div class="tablet-card">
+                        <span class="tablet-card-title">Jeep cherokee</span>
+                        <img class="Vehiculo" src="./Image/Car_3.png" alt="">
+                        <div class="tablet-card-button">Reparar</div>
+                    </div>
+                </div>
+                <div class="tablet-footer">Únete a la nueva era del Mantenimiento Vehicular</div>
+                </div>
+            </div>
+        </div>
+        <div class="CallToActionContainer">
+            <a class="CallToAction" href="#prices">Prueba Autonexo</a>
+        </div>
+        
+        <!--
+        <div class="services__1-item"><img class="corchete corcheteb" src="./Image/Corchete_left.png" alt=""></div>
+        -->
+    </div>
+    <div class="services__2" id="services">
+        <div class="image-container" id="imageContainer">
+            <img src="./Image/guia.png" alt="Placeholder" id="floatingImage">
+        </div>
+        <script>
+            const image = document.getElementById('floatingImage');
+            const container = document.getElementById('imageContainer');
+    
+            window.addEventListener('scroll', () => {
+                const containerRect = container.getBoundingClientRect();
+                const minTop = 150;
+                const maxTop = container.clientHeight - image.clientHeight - 150;
+    
+                let newTop = window.innerHeight / 2 - containerRect.top - (image.clientHeight / 2);
+    
+                newTop = Math.max(minTop, Math.min(newTop, maxTop));
+    
+                image.style.top = `${newTop}px`;
+            });
+        </script>
+        <div class="services__2-info">
+            <div class="info__item">
+                <h2 class="item__title">Guía Interactiva de Reparación</h2>
+                <p class="item__description">Checklist personalizable con pasos específicos para el tipo de reparación. Los técnicos pueden marcar tareas, asegurando un proceso más organizado, estandarizado y sin errores.</p>
+            </div>
+            <div class="info__item">
+                <h2 class="item__title">Historial Técnico Centralizado</h2>
+                <p class="item__description">Consulta el historial completo de intervenciones de cada vehículo en segundos. Visualiza fallas recurrentes, repuestos utilizados y costos asociados, todo en un solo lugar.</p>
+            </div>
+            <div class="info__item">
+                <h2 class="item__title">Presupuestos Automáticos</h2>
+                <p class="item__description">Calcula automáticamente el costo estimado de cada mantenimiento incluyendo mano de obra y repuestos. Toma decisiones informadas sin sorpresas.</p>
+            </div>
+        </div>
+        <script>
+            
+            const infoItems = document.querySelectorAll(".info__item");
+        
+            const images = [
+                "./Image/guia.png",         // Imagen para el primer item
+                "./Image/historial.png", // Imagen para el segundo item
+                "./Image/presupuesto.png"   // Imagen para el tercer item
+            ];
+        
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && entry.intersectionRatio === 1) {
+                        const index = Array.from(infoItems).indexOf(entry.target);
+                        if (index !== -1) {
+                            image.src = images[index];
+                            // Reinicia la animación
+                    image.classList.remove("fade-in");
+                    void image.offsetWidth; // Fuerza el reflow
+                    image.classList.add("fade-in");
+                        }
+                    }
+                });
+            }, {
+                root: null, // viewport
+                threshold: 1.0 // 100% del elemento visible
+            });
+        
+            infoItems.forEach(item => observer.observe(item));
+        </script>
+    </div>
+    <div id="testimonies" class="testimonies">
+        <div class="intro__container">
+            <div class="intro">
+                <h2 class="intro__title">Testimonios de clientes</h2>
+                <p class="intro__description"> Mira lo que nuestros usuarios tienen para decir sobre nuestro servicio en AutoNexo</p>
+            </div>
+        </div>
+        <div class="testimonies__container">
+            <div class="carousel">
+                <div class="track">
+                    <div class="testimonial">
+                        <div class="t_info t_top">
+                            <img class="Comillas" src="./Image/Comillas.png" alt="">
+                            <p class="dice">
+                                Antes llevaba todo en papel, ahora sé exactamente qué tengo que hacer y cuándo. AutoNexo me facilita el trabajo. 
+                            </p>
+                        </div>
+                        <div class="t_user t_bottom">
+                            <img class="Avatar" src="./Image/Avatar.png" alt="">
+                            <div class="user_info">
+                                <h3 class="user_name">Jonathan Ríos</h3>
+                                <p class="user_rol">Técnico de Mantenimiento</p>
+                            </div>
+                        </div>
+                        <img class="car_icon" src="./Image/IconCar_down.png" alt="">
+                    </div>
+                    <div class="testimonial">
+                        <div class="t_info t_top">
+                            <img class="Comillas" src="./Image/Comillas.png" alt="">
+                            <p class="dice">
+                                Con la app tengo mi lista de tareas y repuestos al instante. Es como tener un asistente en el bolsillo. 
+                            </p>
+                        </div>
+                        <div class="t_user t_bottom">
+                            <img class="Avatar" src="./Image/Avatar.png" alt="">
+                            <div class="user_info">
+                                <h3 class="user_name">Carlos Mejía</h3>
+                                <p class="user_rol">Técnico</p>
+                            </div>
+                        </div>
+                        <img class="car_icon" src="./Image/IconCar_down.png" alt="">
+                    </div>
+                    <div class="testimonial">
+                        <div class="t_info t_top">
+                            <img class="Comillas" src="./Image/Comillas.png" alt="">
+                            <p class="dice">
+                                Todo está digitalizado, ya no pierdo tiempo buscando órdenes. AutoNexo me hace más productivo. 
+                            </p>
+                        </div>
+                        <div class="t_user t_bottom">
+                            <img class="Avatar" src="./Image/Avatar.png" alt="">
+                            <div class="user_info">
+                                <h3 class="user_name">Luis Quispe</h3>
+                                <p class="user_rol">Técnico de Flotas</p>
+                            </div>
+                        </div>
+                        <img class="car_icon" src="./Image/IconCar_down.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Línea central doble -->
+            <div class="divider-container">
+                <div class="line"></div>
+                <div class="spacer"></div>
+                <div class="line"></div>
+            </div>
+    
+            <div class="carousel">
+                <div class="track reverse">
+                    <div class="testimonial">
+                        <img class="car_icon" src="./Image/IconCar_Up.png" alt="">
+                        <div class="t_user t_top"><img class="Avatar" src="./Image/Avatar.png" alt="">
+                            <div class="user_info">
+                                <h3 class="user_name">Claudia Navarro</h3>
+                                <p class="user_rol">Gerente de Operaciones de Flota</p>
+                            </div>
+                        </div>
+                        <div class="t_info t_bottom"><img class="Comillas" src="./Image/Comillas.png" alt="">
+                            <p class="dice">
+                                Puedo ver el estado de toda la flota en segundos. AutoNexo me da tranquilidad y control total.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img class="car_icon" src="./Image/IconCar_Up.png" alt="">
+                        <div class="t_user t_top"><img class="Avatar" src="./Image/Avatar.png" alt="">
+                            <div class="user_info">
+                                <h3 class="user_name">Liliana Vasquez</h3>
+                                <p class="user_rol">Propietaria de Transporte Logístico</p>
+                            </div>
+                        </div>
+                        <div class="t_info t_bottom"><img class="Comillas" src="./Image/Comillas.png" alt="">
+                            <p class="dice">
+                                Con AutoNexo reduje los tiempos de inactividad de mis vehiculos en un 40%. Es la mejor inversión para mi flota. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <img class="car_icon" src="./Image/IconCar_Up.png" alt="">
+                        <div class="t_user t_top"><img class="Avatar" src="./Image/Avatar.png" alt="">
+                            <div class="user_info">
+                                <h3 class="user_name">Liliana Vasquez</h3>
+                                <p class="user_rol">Dueño de Flotas Comerciales</p>
+                            </div>
+                        </div>
+                        <div class="t_info t_bottom"><img class="Comillas" src="./Image/Comillas.png" alt="">
+                            <p class="dice">
+                                AutoNexo me permite ver el estado de mis vehículos en tiempo real. Tomo decisiones con datos, no con suposiciones. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="prices" class="prices">
+        <div class="prices_header">
+            <h2 class="ph_title">Precios</h2>
+        </div>
+        <div class="plans">
+            <div class="plan">
+                <h3 class="plan_title">Plan Gratuito</h3>
+                <h2 class="cost">S/0.00</h2>
+                <ul class="benefits_conteiner gra">
+                    <li class="benefit">-Registro de hasta 4 vehículos.</li>
+                    <li class="benefit">-Visualización del estado del vehiculo.</li>
+                    <li class="benefit">-Acceso a historial de reparaciónes del vehículo.</li>
+                    <li class="benefit">-Notificaciones por email</li>
+                    <li class="benefit">-Soporte vía correo electrónico.
+                    </li>
+                </ul>
+                <a class="acceder_buttom" href="#contact">Acceder</a>
+            </div>
+            <div class="plan resaltar">
+                <h3 class="plan_title">Plan Premium</h3>
+                <h2 class="cost">S/100.00</h2>
+                <ul class="benefits_conteiner pre">
+                    <li class="benefit">-Vehículos ilimitados.</li>
+                    <li class="benefit">-Reparaciones predictivas basados en datos.</li>
+                    <li class="benefit">-Integración con sensores IoT </li>
+                    <li class="benefit">-Guia de pasos avanzada y detallada</li>
+                    <li class="benefit">-Soporte prioritario 24/7.</li>
+                </ul>
+                <a class="acceder_buttom" href="#contact">Acceder</a>
+            </div>
+            <div class="plan">
+                <h3 class="plan_title"> Plan Pro</h3>
+                <h2 class="cost">S/60.00</h2>
+                <ul class="benefits_conteiner pro">
+                    <li class="benefit">-Registro de hasta 15 vehículos.</li>
+                    <li class="benefit">-Gestión de repuestos y stock básico.</li>
+                    <li class="benefit">-Historial completo del vehículo.</li>
+                    <li class="benefit">-Informes de costos por mantenimiento.</li>
+                    <li class="benefit">-Acceso multiusuario (hasta 3 cuentas).</li>
+                </ul>
+                <a class="acceder_buttom" href="#contact">Acceder</a>
+            </div>
+        </div>
+    </div>
+    <div id="nosotros" class="nosotros">
+        <div class="nosotrosDes">
+            <div class="titleNosotros">
+                <h1>Nosotros</h1>
+            </div>          
+            <div class="misionVision">
+                <div class="mision">
+                    <h2>Mision</h2>
+                    <p>Digitalizar la gestión del mantenimiento vehicular, conectando a técnicos y clientes mediante flujos inteligentes que aseguren organización, eficiencia y trazabilidad en cada servicio realizado.</p>
+                </div>
+                <div class="vision">
+                    <h2>Vision</h2>
+                    <p>Ser la plataforma líder en gestión de mantenimientos vehiculares en el Perú, ofreciendo una experiencia integral, intuitiva y confiable para empresas, técnicos y usuarios particulares.</p>
+                </div>
+            </div>
+            <div class="proposito">
+                <div class="titleProposito">
+                    <h1>Propósito</h1>
+                </div>
+                <p>Somos ATG, una startup emergente. Nuestro propósito revolucionar la gestión de mantenimiento vehicular para flotas, eliminando el caos de los sistemas tradicionales. Nos basamos en 3 pilares clave:</p>
+                <div class="pilares">
+ <div class="pilarA">
+                    <p>🛠️ 1. Automatizar lo tedioso</p>
+                    <li>
+                        Digitaliza procesos manuales (papeles, Excel, recordatorios en post-its).
+                    </li>
+                    <li> Guías interactivas para técnicos, evitando errores y estandarizando reparaciones. </li>
+                </div>
+                <div class="pilarB">
+                    <p>💰 2. Ahorrar tiempo y dinero</p>
+                    <li>
+                        Alertas preventivas para evitar fallas costosas.
+                    </li>
+                    <li>
+                        Historial centralizado de cada vehículo (repuestos usados, costos).
+                    </li>
+                </div>
+                <div class="pilarC">
+                     <p>📲 3. Control total en una plataforma</p>
+                    <li>
+                        Dashboard intuitivo para dueños de flotas, gerentes y técnicos.
+                    </li>
+                    <li>
+                        Acceso móvil/desktop con reportes en tiempo real.
+                    </li>
+                </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="entrevistas">
+            <img src="./Image/EntrevistaA.png" class="entrevistaA">
+            <img src="./Image/EntrevistaB.png" class="entrevistaB">
+            <img src="./Image/EntrevistaC.png" class="entrevistaC">
+            <img src="./Image/EntrevistaD.png" class="entrevistaD">
+        </div>
+    </div>
+    <div id="contact" class="contacto">
+        <form class="formContacto">
+            <h1>Contáctanos</h1> 
+            <label for="name">Nombre:</label> <br>
+            <input type="text" id="name" name="user_name" placeholder="Jhon Doe"/> <br>
+
+            <label for="mail">Correo electrónico:</label> <br>
+            <input type="email" id="mail" name="user_mail" placeholder="tucorreo@gmail.com"/> <br> 
+
+            <label for="msg">Mensaje:</label> <br>
+            <textarea id="msg" name="user_message" placeholder="¡Hola quiero recibir más información!"></textarea> <br> <br>
+            <a href="#contact" class="nav__link link__ContactUs">Enviar</a>
+        </form>
+        <div class="contactlogo_container">
+            <img class="contactlogo" src="./Image/LogoCompleto.png" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <h2><i> Nuestras Redes Sociales</i></h2>
+        <div class="redes">
+            <a class="red" href="#">Instagram</a>
+            <a class="red" href="#">Twitter</a>
+            <a class="red" href="#">Youtube</a>
+            <a class="red" href="#">Outlook</a>
+            <a class="red" href="#">Facebook</a>
+        </div>
+        <p class="copy">©2025 AutoNexo. Derechos reservados.</p>
+    </footer>
+</body>
+</html>
