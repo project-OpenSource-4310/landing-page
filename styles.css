@@ -77,6 +77,7 @@ body, div, header, nav, ul, p, img{
 /* HOME SECTION */
 
 .home{
+    padding-top: 8vh;
     font-family: montserrat;
     display: flex;
     color: #fff;
@@ -750,12 +751,32 @@ textarea{
     margin-right: 10vw;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
+
+/* ABOUT THE TEAM */
+.about_team{
+    background-color: #540065;
+    color: #fff;
+    font-family: Montserrat;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    padding: 2rem;
+}
+/* ABOUT THE PRODUCT */
+.about_product{
+    background-color: #7D0097;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 2rem;
+}
 /* FOOTER */
 .footer{
     color: #fff;
     justify-self: center;
     margin: 5vh 0 ;
     text-align: center;
+
 }
 .redes{
     justify-self: center;
